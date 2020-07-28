@@ -1,0 +1,24 @@
+   .present {
+    background-color: #ff6961;
+    color: white;
+  }
+  
+  .future {
+    background-color: #77dd77;
+    color: white;
+  }
+  
+  .saveBtn {
+    border-left: 1px solid black;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: #7e1a9c;
+    color: white;
+    height: 100%;
+    width:100%;
+  }
+  
+  .saveBtn i:hover {
+    font-size: 35px;
+    transition: all .3s ease-in-out;
+  }
