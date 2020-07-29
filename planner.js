@@ -9,7 +9,6 @@ var storedAppointments;
 var returnedAppointments;
 
 
-
 $(window).on("load", function () {
  currentDate = moment().format("dddd MMM Do YYYY, h:mm a");
 $("#currentDay").append(currentDate);
@@ -31,7 +30,7 @@ function renderAppointments() {
     }
 
 renderAppointments();
-//Color change for past appointments, current hour and future appointments
+//Color change for past appointments, current hour and g
 for (i = 0; i <= 23; i++) {
     CurrentContainer = i;
         if (currentTime == i) {
@@ -69,3 +68,22 @@ $(".saveBtn").click(function () {
     }
     $(this).parent('div').children('div').children('textarea').replaceWith($('<textarea>' + appointText.addClass("textarea") + '</textarea>'));
 })
+
+var nineAM = JSON.parse(localStorage.getItem('nineAM'));
+$("#nineamtextarea").val(nineAM);
+var tenAM = JSON.parse(localStorage.getItem('tenAM'));
+$("#tenamtextarea").val(tenAM);
+var elevenAM = JSON.parse(localStorage.getItem('elevenAM'));
+$("#elevenamtextarea").val(elevenAM);
+var twelvePM = JSON.parse(localStorage.getItem('twelvePM'));
+$("#twelvepmtextarea").val(twelvePM);
+var onePM = JSON.parse(localStorage.getItem('onePM'));
+$("#onepmtextarea").val(onePM);
+var twoPM = JSON.parse(localStorage.getItem('twoPM'));
+$("#twopmtextarea").val(twoPM);
+var threePM = JSON.parse(localStorage.getItem('threePM'));
+$("#threepmtextarea").val(threePM);
+var fourPM = JSON.parse(localStorage.getItem('fourPM'));
+$("#fourpmtextarea").val(fourPM);
+var fivePM = JSON.parse(localStorage.getItem('fivePM'));
+$("#fivepmtextarea").val(fivePM);
